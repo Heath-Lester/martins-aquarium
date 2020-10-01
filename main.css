@@ -1,0 +1,33 @@
+@import "fishlist__fish.css"
+
+header {
+    display: flex
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.body {
+    display: flex
+    
+
+}
+
+.leftSide {
+    float: left;
+    width: 74%
+}
+
+img {
+    display: flex;
+    width: 24%
+}
+
+.rightSide {
+    float: right;
+    width: 24%
+}
+
+header, body, .leftSide, .rightSide {
+    border: dotted blue 5px;
+}
