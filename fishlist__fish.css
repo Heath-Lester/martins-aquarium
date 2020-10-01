@@ -1,0 +1,29 @@
+.fishList__fish {
+    flex-flow: row wrap;
+    padding: 5px;
+    width: 23%;
+    border: solid black;
+    margin: 5px;
+    min-width: 200px;
+    text-align: left;
+    height: 400px;
+}
+
+.fish__info {
+    text-align: left;
+}
+/* .travelTips {
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 23%;
+    border: solid black;
+    margin: 5px;
+}
+
+.harvest {
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 23%;
+    border: solid black;
+    margin: 5px;
+} */

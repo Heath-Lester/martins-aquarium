@@ -1,33 +1,59 @@
-@import "fishlist__fish.css"
+@import "fishlist__fish.css";
+
+#title {
+    display:flex;
+    justify-content: center;
+}
 
 header {
-    display: flex
-    justify-content: center;
-    align-items: center;
-    padding: 3em;
+        padding: 10px;
+        border: solid brown;
 }
 
 .body {
     display: flex
-    
 
 }
 
+/* ----Everything on Left Side---- */
 .leftSide {
     float: left;
     width: 74%
+    padding: 10px;
+    
 }
 
 img {
-    display: flex;
-    width: 24%
+    width: 80%;
+    justify-content: space-around;
+    
 }
 
-.rightSide {
+.fishList {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 73%
+    
+}
+
+.travelTips {
+    border: dotted red
+}
+
+.harvest {
+    border: dotted green
+}
+
+
+/* ----Everything on Right Side---- */
+ .rightSide {
     float: right;
     width: 24%
-}
+    
+} 
 
-header, body, .leftSide, .rightSide {
+
+/* header, body, .leftSide, .rightSide {
     border: dotted blue 5px;
-}
+} */
