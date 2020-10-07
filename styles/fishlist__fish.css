@@ -4,14 +4,22 @@
     width: 23%;
     border: solid black;
     margin: 5px;
-    min-width: 200px;
+    min-width: 175px;
+    max-width: 200px;
     text-align: left;
     height: 400px;
+    align-items: center;
 }
 
 .fish__info {
     text-align: left;
 }
+
+ul {
+    margin-left: -16px;
+}
+
+
 /* .travelTips {
     flex-flow: column wrap;
     justify-content: center;
