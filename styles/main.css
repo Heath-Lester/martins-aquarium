@@ -10,23 +10,26 @@ header {
         border: solid brown;
 }
 
-body {
+/* body {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row nowrap; */
 
+/* } */
+
+.container {
+    display: flex;
 }
 
-/* ----Everything on Left Side---- */
+
 .leftSide {
-    flex-basis: 73%;
+    flex: 3;
     
     
 }
 
 
-/* ----Everything on Right Side---- */
  .rightSide {
-    flex-basis: 23%;
+    flex: 1;
     border: purple dotted;
 } 
 img {
@@ -38,9 +41,6 @@ img {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 23%;
-    
-   
-  
     
 }
 
