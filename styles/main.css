@@ -1,3 +1,62 @@
-#fishtank {}
-.fish {}
-.fish_name {}
+@import "./fishlist__fish.css";
+
+#title {
+    display:flex;
+    justify-content: center;
+}
+
+header {
+        padding: 10px;
+        border: solid brown;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+/* ----Everything on Left Side---- */
+.leftSide {
+    flex-basis: 73%;
+    
+    
+}
+
+
+/* ----Everything on Right Side---- */
+ .rightSide {
+    flex-basis: 23%;
+    border: purple dotted;
+} 
+img {
+    width: 100px;
+          
+}
+
+.fishList {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 23%;
+    
+   
+  
+    
+}
+
+.travelTips {
+    border: dotted red;
+    
+}
+
+.harvest {
+    border: dotted green;
+}
+
+
+
+
+
+/* header, body, .leftSide, .rightSide {
+    border: dotted blue 5px;
+} */
