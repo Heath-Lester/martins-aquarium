@@ -10,17 +10,14 @@ header {
         border: solid brown;
 }
 
-body {
+.container {
     display: flex;
-    flex-flow: row nowrap;
-
 }
 
 /* ----Everything on Left Side---- */
 .leftSide {
     flex-basis: 73%;
-    
-    
+
 }
 
 
@@ -31,17 +28,13 @@ body {
 } 
 img {
     width: 100px;
-          
-}
+    
+}   
 
 .fishList {
     display: flex;
     flex-flow: row wrap;
-    flex-basis: 23%;
-    
-   
-  
-    
+    flex-basis: 23%;    
 }
 
 .travelTips {
