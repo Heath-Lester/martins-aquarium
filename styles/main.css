@@ -14,16 +14,14 @@ header {
     display: flex;
 }
 
-/* ----Everything on Left Side---- */
-.leftSide {
-    flex-basis: 73%;
 
+.leftSide {
+    flex: 3;
 }
 
 
-/* ----Everything on Right Side---- */
  .rightSide {
-    flex-basis: 23%;
+    flex: 1;
     border: purple dotted;
 } 
 img {
@@ -38,8 +36,7 @@ img {
 }
 
 .travelTips {
-    border: dotted red;
-    
+    border: dotted red;  
 }
 
 .harvest {
