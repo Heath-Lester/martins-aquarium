@@ -10,12 +10,6 @@ header {
         border: solid brown;
 }
 
-/* body {
-    display: flex;
-    flex-flow: row nowrap; */
-
-/* } */
-
 .container {
     display: flex;
 }
@@ -23,8 +17,6 @@ header {
 
 .leftSide {
     flex: 3;
-    
-    
 }
 
 
@@ -34,19 +26,17 @@ header {
 } 
 img {
     width: 100px;
-          
-}
+    
+}   
 
 .fishList {
     display: flex;
     flex-flow: row wrap;
-    flex-basis: 23%;
-    
+    flex-basis: 23%;    
 }
 
 .travelTips {
-    border: dotted red;
-    
+    border: dotted red;  
 }
 
 .harvest {
