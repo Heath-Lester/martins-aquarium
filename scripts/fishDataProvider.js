@@ -7,8 +7,7 @@ const fishCollection = [
         length: 24
         location: "Montgomery Bell State Park"
         diet: `Bait fish, scuds, shrimp, shad, nails, crawfish, frogs, snakes, salamanders, bats,
-        small
-        water birds, mammals, and baby alligators.`
+        small water birds, mammals, and baby alligators.`
     }, 
     {
         image:"https://freshwaterfishingadvice.com/wp-content/uploads/2018/12/storyblocks-close-up-of-a-smallmouth-bass-with-a-lake-in-the-background_HVYE7RXWX_1_900x.jpg"
