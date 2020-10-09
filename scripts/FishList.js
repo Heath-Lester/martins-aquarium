@@ -12,7 +12,7 @@ export const FishList = () => {
 
     // This stores the fish objects whos lenth property is divisible by 3
     const theHolyFish = mostHolyFish()
-
+    
   
 
     // OLD This creates a variable that converts all its contents into a string.
