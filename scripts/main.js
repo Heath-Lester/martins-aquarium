@@ -7,9 +7,10 @@ import {  FishList  } from './FishList.js';
 const allTheFish = useFish()
 
 // This logs all the properties of all the objects from fishCollection
-for (const fish of allTheFish) {
-    console.log(fish)
-}
+// for (const fish of allTheFish) {
+//     console.log(fish)
+// }
 
 //this calls the function FishList that combines both FishDataProvider.js and Fish.js and renders them to HTML
 FishList()
+
