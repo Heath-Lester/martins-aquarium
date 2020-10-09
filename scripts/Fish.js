@@ -7,7 +7,7 @@ export const Fish = (fish) => {
         <h3>${fish.name}</h3>
             <ul class="fish__info">
                 <li>${fish.species}</li>
-                <li>${fish.length}</li>
+                <li>${fish.length}"</li>
                 <li>${fish.location}</li>
                 <li>${fish.diet}</li>
             </ul>
