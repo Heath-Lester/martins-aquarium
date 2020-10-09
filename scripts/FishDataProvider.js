@@ -58,3 +58,13 @@ export const soldierFish = () => {
         } 
     } return gruntFish
 }
+
+export const nonHolyFish = () => {
+    const peasantFish = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+            console.log(fish)
+           peasantFish.push(fish)
+        } 
+    } return peasantFish
+}

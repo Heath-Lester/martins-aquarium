@@ -1,6 +1,6 @@
 
 
-import {   useFish  } from './FishDataProvider.js';
+import {   nonHolyFish, useFish  } from './FishDataProvider.js';
 import {  FishList  } from './FishList.js';
 
 // This places the copy of the array fishCollection into a variable allTheFish
@@ -14,3 +14,4 @@ const allTheFish = useFish()
 //this calls the function FishList that combines both FishDataProvider.js and Fish.js and renders them to HTML
 FishList()
 
+nonHolyFish()
