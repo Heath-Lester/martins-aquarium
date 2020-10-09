@@ -1,5 +1,5 @@
 // imports functions and arrays from other JS files
-import {  useFish, mostHolyFish, soldierFish  } from './FishDataProvider.js';
+import {  useFish, mostHolyFish, soldierFish, nonHolyFish  } from './FishDataProvider.js';
 import {  Fish  } from './Fish.js';
 
 
@@ -13,13 +13,14 @@ export const FishList = () => {
     // This stores the fish objects whos lenth property is divisible by 3
     const theHolyFish = mostHolyFish()
     const armyFish = soldierFish()
-  
+    const peasantFish = nonHolyFish()
 
     // -OLD- This creates a variable that converts all its contents into a string.
     // let fishHTMLRepresentations = ""
 
     let holyFishHTMLRep = ""
     let soldierFishHTMLRep = ""
+    let nonHolyFishHTMLRep = ""
 
     // -OLD- uses the new variable fish to iterate over the copy of the fishCollection array inside of useFish(),
     // then passes each object through the Fish() function that extracts all properties of the objects in fishCollection
@@ -35,6 +36,11 @@ export const FishList = () => {
     for (const hardiest of armyFish) {
         soldierFishHTMLRep += Fish(hardiest)
     }
+
+    for (const workingClass of peasantFish) {
+        nonHolyFishHTMLRep += Fish(workingClass)
+    }
+    
     // -OLD- this inserts the string that is inside the varable fishHTMLRepresentations into the location specified by the contentElement variable.
     // contentElement.innerHTML += `
     //         ${fishHTMLRepresentations}
@@ -43,6 +49,7 @@ export const FishList = () => {
     contentElement.innerHTML += `
       ${holyFishHTMLRep}
       ${soldierFishHTMLRep}
+      ${nonHolyFishHTMLRep}
     `
 
   }
