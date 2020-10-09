@@ -1,6 +1,5 @@
 
-
-import {   useFish  } from './FishDataProvider.js';
+import {    useFish  } from './FishDataProvider.js';
 import {  FishList  } from './FishList.js';
 
 // This places the copy of the array fishCollection into a variable allTheFish

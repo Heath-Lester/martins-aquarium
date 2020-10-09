@@ -39,6 +39,7 @@ export const useFish = () => {
     return fishCollection.slice()
 }
 
+// These exported functions provide a copy of objects discriminated the divisibility of the .length property.
 export const mostHolyFish = () => {
     const holyFish = []
     for (const fish of fishCollection) {
@@ -46,7 +47,7 @@ export const mostHolyFish = () => {
             console.log(fish)
             holyFish.push(fish)
         } 
-    } return holyFish
+    } return holyFish.slice()
 }
 
 export const soldierFish = () => {
@@ -56,5 +57,15 @@ export const soldierFish = () => {
             console.log(fish)
             gruntFish.push(fish)
         } 
-    } return gruntFish
+    } return gruntFish.slice()
+}
+
+export const nonHolyFish = () => {
+    const peasantFish = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+            console.log(fish)
+           peasantFish.push(fish)
+        } 
+    } return peasantFish.slice()
 }
