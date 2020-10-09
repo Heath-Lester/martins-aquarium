@@ -1,5 +1,5 @@
 // imports functions and arrays from other JS files
-import {  useFish  } from './FishDataProvider.js';
+import {  useFish, mostHolyFish  } from './FishDataProvider.js';
 import {  Fish  } from './Fish.js';
 
 
@@ -7,22 +7,38 @@ export const FishList = () => {
     // grabs the HTML class .fishList and stores it the variable contentElement
     const contentElement = document.querySelector(".fishList")
 
-    // stores the useFish function in a variable
-    const fishes = useFish()
+    // -OLD- stores the useFish function in a variable
+    // const fishes = useFish()
 
-    // This creates a variable that converts all its contents into a string.
-    let fishHTMLRepresentations = ""
+    // This stores the fish objects whos lenth property is divisible by 3
+    const theHolyFish = mostHolyFish()
 
-    // uses the new variable fish to iterate over the copy of the fishCollection array inside of useFish(),
+  
+
+    // OLD This creates a variable that converts all its contents into a string.
+    // let fishHTMLRepresentations = ""
+
+    let holyFishHTMLRep = ""
+
+    // -OLD- uses the new variable fish to iterate over the copy of the fishCollection array inside of useFish(),
     // then passes each object through the Fish() function that extracts all properties of the objects in fishCollection
     // and stores and appends them into the variable fishHTMLRepresentation. 
-    for (const fish of fishes) {
-      fishHTMLRepresentations += Fish(fish)
-        
+    // for (const fish of fishes) {
+    //   fishHTMLRepresentations += Fish(fish)
+    // }
+
+    for (const holiest of theHolyFish) {
+        holyFishHTMLRep += Fish(holiest)
     }
 
-    // this inserts the string that is inside the varable fishHTMLRepresentations into the location specified by the contentElement variable.
+    // -OLD- this inserts the string that is inside the varable fishHTMLRepresentations into the location specified by the contentElement variable.
+    // contentElement.innerHTML += `
+    //         ${fishHTMLRepresentations}
+    //     `
+
     contentElement.innerHTML += `
-            ${fishHTMLRepresentations}
-        `
-}
+      ${holyFishHTMLRep}
+    `
+
+  }
+
