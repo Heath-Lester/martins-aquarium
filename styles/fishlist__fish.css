@@ -4,10 +4,10 @@
     width: 23%;
     border: solid black;
     margin: 5px;
-    min-width: 175px;
+    min-width: 200px;
     max-width: 200px;
     text-align: left;
-    height: 400px;
+    height: 450px;
     align-items: center;
 }
 
