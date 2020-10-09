@@ -48,3 +48,13 @@ export const mostHolyFish = () => {
         } 
     } return holyFish
 }
+
+export const soldierFish = () => {
+    const gruntFish = []
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0) {
+            console.log(fish)
+            gruntFish.push(fish)
+        } 
+    } return gruntFish
+}
