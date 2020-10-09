@@ -1,13 +1,30 @@
 @import "./fishlist__fish.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html,main, body {
+    font-family:'Josefin Sans', sans-serif;
+}
+
+html {
+    background-image: url("/images/blueLake.jpg");
+    background-size: 100%;
+    background-color: aliceblue;
+}
 
 #title {
     display:flex;
     justify-content: center;
+    min-width: 500px;
+    margin-bottom: 20px;
+    background-image: url("/images/woodBackground.jpg");
+    background-size: cover;
+    color: rgb(255, 255, 255)
 }
 
 header {
         padding: 10px;
-        border: solid brown;
+        text-align: center;
+        background-color: rgb(79, 158, 218);
 }
 
 .container {
@@ -22,11 +39,17 @@ header {
 
  .rightSide {
     flex: 1;
+    margin-left: 3%;
     border: purple dotted;
+    text-align: center;
 } 
 img {
-    width: 150px;
-    
+    border-radius: 10px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  
 }   
 
 .fishList {
@@ -43,10 +66,3 @@ img {
     border: dotted green;
 }
 
-
-
-
-
-/* header, body, .leftSide, .rightSide {
-    border: dotted blue 5px;
-} */

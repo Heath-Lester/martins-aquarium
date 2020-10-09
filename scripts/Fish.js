@@ -1,4 +1,4 @@
-// This converts the fishCollection Objects into an HTML format
+// This provides a function to extract the properties of an object and places them into an HTML format
 
 export const Fish = (fish) => {
     return `

@@ -1,16 +1,27 @@
 .fishList__fish {
     flex-flow: row wrap;
-    padding: 5px;
+    padding: 1%;
+    padding-top: 2%;
     width: 23%;
     border: solid black;
-    margin: 5px;
-    min-width: 175px;
-    max-width: 200px;
+    margin: 10px;
+    min-width: 225px;
+    max-width: 225px;
     text-align: left;
-    height: 400px;
+    height: 500px;
     align-items: center;
+    background-color: rgb(173, 196, 213);
+    border-radius: 25px;
+      
 }
 
+h3 {   
+    padding-left: 12%;
+}
+
+li {
+    margin-bottom: 10px;
+}
 .fish__info {
     text-align: left;
 }
